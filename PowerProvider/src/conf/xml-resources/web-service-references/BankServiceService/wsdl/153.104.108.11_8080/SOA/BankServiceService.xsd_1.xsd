@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.2-hudson-182-RC1. --><xs:schema xmlns:tns="http://soa/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://soa/">
+
+<xs:element name="addAccount" type="tns:addAccount"></xs:element>
+
+<xs:element name="addAccountResponse" type="tns:addAccountResponse"></xs:element>
+
+<xs:element name="addMoney" type="tns:addMoney"></xs:element>
+
+<xs:element name="addMoneyResponse" type="tns:addMoneyResponse"></xs:element>
+
+<xs:element name="transferMoney" type="tns:transferMoney"></xs:element>
+
+<xs:element name="transferMoneyResponse" type="tns:transferMoneyResponse"></xs:element>
+
+<xs:element name="withdrawMoney" type="tns:withdrawMoney"></xs:element>
+
+<xs:element name="withdrawMoneyResponse" type="tns:withdrawMoneyResponse"></xs:element>
+
+<xs:complexType name="transferMoney">
+<xs:sequence>
+<xs:element name="source_account_no" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="destination_account_no" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="amount" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transferMoneyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addAccount">
+<xs:sequence>
+<xs:element name="account_no" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="first_name" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="last_name" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="balance" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="withdrawMoney">
+<xs:sequence>
+<xs:element name="account_no" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="amount" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="withdrawMoneyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMoney">
+<xs:sequence>
+<xs:element name="account_no" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="amount" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMoneyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/SmartMeter/SmartMeterForDevicesService?wsdl" uri="src/conf/xml-resources/web-service-references/SmartMeterForDevicesService/wsdl/localhost_8080/SmartMeter/SmartMeterForDevicesService.wsdl"/>
+    <system systemId="http://localhost:8080/SmartMeter/SmartMeterForDevicesService?xsd=1" uri="src/conf/xml-resources/web-service-references/SmartMeterForDevicesService/wsdl/localhost_8080/SmartMeter/SmartMeterForDevicesService.xsd_1.xsd"/>
+    <system systemId="http://153.104.108.66:8080/SmartMeter/SmartMeterForDevicesService?wsdl" uri="src/conf/xml-resources/web-service-references/SmartMeterForDevicesService/wsdl/153.104.108.66_8080/SmartMeter/SmartMeterForDevicesService.wsdl"/>
+    <system systemId="http://153.104.108.66:8080/SmartMeter/SmartMeterForDevicesService?xsd=1" uri="src/conf/xml-resources/web-service-references/SmartMeterForDevicesService/wsdl/153.104.108.66_8080/SmartMeter/SmartMeterForDevicesService.xsd_1.xsd"/>
+</catalog>

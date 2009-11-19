@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.2-hudson-182-RC1. --><xs:schema xmlns:tns="http://smartmeter.power.home/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://smartmeter.power.home/">
+
+<xs:element name="registerDevice" type="tns:registerDevice"></xs:element>
+
+<xs:element name="registerDeviceForProgramming" type="tns:registerDeviceForProgramming"></xs:element>
+
+<xs:element name="registerDeviceForProgrammingResponse" type="tns:registerDeviceForProgrammingResponse"></xs:element>
+
+<xs:element name="registerDeviceResponse" type="tns:registerDeviceResponse"></xs:element>
+
+<xs:element name="requestPowerConfiguration" type="tns:requestPowerConfiguration"></xs:element>
+
+<xs:element name="requestPowerConfigurationResponse" type="tns:requestPowerConfigurationResponse"></xs:element>
+
+<xs:element name="tellPowerConfiguration" type="tns:tellPowerConfiguration"></xs:element>
+
+<xs:element name="tellPowerConfigurationResponse" type="tns:tellPowerConfigurationResponse"></xs:element>
+
+<xs:element name="unregisterDevice" type="tns:unregisterDevice"></xs:element>
+
+<xs:element name="unregisterDeviceResponse" type="tns:unregisterDeviceResponse"></xs:element>
+
+<xs:complexType name="registerDeviceForProgramming">
+<xs:sequence>
+<xs:element name="deviceID" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="supportedPowerLevels" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerDeviceForProgrammingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerDevice">
+<xs:sequence>
+<xs:element name="deviceName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="deviceType" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="deviceModel" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="powerRating" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerDeviceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unregisterDevice">
+<xs:sequence>
+<xs:element name="deviceID" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unregisterDeviceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tellPowerConfiguration">
+<xs:sequence>
+<xs:element name="deviceID" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="currentPowerConfiguration" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tellPowerConfigurationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestPowerConfiguration">
+<xs:sequence>
+<xs:element name="deviceID" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestPowerConfigurationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/SmartMeter/SmartMeterForPowerProviderService?WSDL" uri="src/conf/xml-resources/web-service-references/SmartMeterForPowerProviderService/wsdl/localhost_8080/SmartMeter/SmartMeterForPowerProviderService.wsdl"/>
+    <system systemId="http://localhost:8080/SmartMeter/SmartMeterForPowerProviderService?xsd=1" uri="src/conf/xml-resources/web-service-references/SmartMeterForPowerProviderService/wsdl/localhost_8080/SmartMeter/SmartMeterForPowerProviderService.xsd_1.xsd"/>
+    <system systemId="http://153.104.108.11:8080/SOA/BankServiceService?WSDL" uri="src/conf/xml-resources/web-service-references/BankServiceService/wsdl/153.104.108.11_8080/SOA/BankServiceService.wsdl"/>
+    <system systemId="http://153.104.108.11:8080/SOA/BankServiceService?xsd=1" uri="src/conf/xml-resources/web-service-references/BankServiceService/wsdl/153.104.108.11_8080/SOA/BankServiceService.xsd_1.xsd"/>
+</catalog>

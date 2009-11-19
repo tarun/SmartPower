@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.2-hudson-182-RC1. --><xs:schema xmlns:tns="http://smartmeter.power.home/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://smartmeter.power.home/">
+
+<xs:element name="requestConsumptionProfile" type="tns:requestConsumptionProfile"></xs:element>
+
+<xs:element name="requestConsumptionProfileResponse" type="tns:requestConsumptionProfileResponse"></xs:element>
+
+<xs:element name="requestConsumptionSummary" type="tns:requestConsumptionSummary"></xs:element>
+
+<xs:element name="requestConsumptionSummaryResponse" type="tns:requestConsumptionSummaryResponse"></xs:element>
+
+<xs:element name="setConsumptionProfile" type="tns:setConsumptionProfile"></xs:element>
+
+<xs:element name="setConsumptionProfileResponse" type="tns:setConsumptionProfileResponse"></xs:element>
+
+<xs:complexType name="requestConsumptionProfile">
+<xs:sequence>
+<xs:element name="frequency" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestConsumptionProfileResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestConsumptionSummary">
+<xs:sequence>
+<xs:element name="fromDate" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="toDate" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestConsumptionSummaryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setConsumptionProfile">
+<xs:sequence>
+<xs:element name="newPowerLevel" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setConsumptionProfileResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

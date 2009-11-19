@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.2-hudson-182-RC1. --><xs:schema xmlns:tns="http://provider.power.utility/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://provider.power.utility/">
+
+<xs:element name="payBill" type="tns:payBill"></xs:element>
+
+<xs:element name="payBillResponse" type="tns:payBillResponse"></xs:element>
+
+<xs:element name="registerSmartMeter" type="tns:registerSmartMeter"></xs:element>
+
+<xs:element name="registerSmartMeterResponse" type="tns:registerSmartMeterResponse"></xs:element>
+
+<xs:element name="requestBillingInformation" type="tns:requestBillingInformation"></xs:element>
+
+<xs:element name="requestBillingInformationResponse" type="tns:requestBillingInformationResponse"></xs:element>
+
+<xs:element name="requestPowerProfile" type="tns:requestPowerProfile"></xs:element>
+
+<xs:element name="requestPowerProfileResponse" type="tns:requestPowerProfileResponse"></xs:element>
+
+<xs:element name="tellPowerProfile" type="tns:tellPowerProfile"></xs:element>
+
+<xs:element name="tellPowerProfileResponse" type="tns:tellPowerProfileResponse"></xs:element>
+
+<xs:complexType name="payBill">
+<xs:sequence>
+<xs:element name="meterID" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="amount" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="customerAccountNumber" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="payBillResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestPowerProfile">
+<xs:sequence>
+<xs:element name="meterID" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="powerRequirements" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestPowerProfileResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerSmartMeter">
+<xs:sequence>
+<xs:element name="customerNumber" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="meterID" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="meterLocation" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="meterDeviceInformation" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="supportedConfigurationsInfo" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerSmartMeterResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tellPowerProfile">
+<xs:sequence>
+<xs:element name="meterID" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="currentPowerProfile" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tellPowerProfileResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestBillingInformation">
+<xs:sequence>
+<xs:element name="meterID" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="billingPeriod" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestBillingInformationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
